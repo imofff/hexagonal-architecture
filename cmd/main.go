@@ -1,11 +1,11 @@
 package main
 
 import (
+	"hexagonal/config"
 	"hexagonal/internal/adapter/http"
 	"hexagonal/internal/adapter/http/handler"
 	"hexagonal/internal/adapter/postgres"
 	"hexagonal/internal/app/usecase"
-	"hexagonal/internal/config"
 )
 
 func main() {
