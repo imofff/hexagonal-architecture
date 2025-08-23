@@ -1,0 +1,50 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Output of `go build`
+bin/
+*.out
+
+# Go workspace file
+go.work
+go.work.sum
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# System
+.DS_Store
+Thumbs.db
+
+# Environment & Config
+.env
+.env.*
+
+# GORM SQLite cache (for in-memory or test use)
+*.db
+*.sqlite
+*.sqlite3
+
+# Coverage reports
+coverage.out
+*.coverprofile
+
+# Logs
+*.log
+
+# Test result snapshots
+*.snap
+
+# Test cache
+*.tmp
+*.testdata
+
+# Dependency directories (if vendor used)
+vendor/
