@@ -5,7 +5,7 @@ A modular backend service using Hexagonal Architecture (aka Ports & Adapters) in
 ## 📦 Tech Stack
 
 - Go 1.24.5
-- Gin (HTTP Router)
+- net/http (native HTTP handler)
 - GORM (ORM for PostgreSQL)
 - PostgreSQL
 - Hexagonal Architecture (Ports & Adapters)
