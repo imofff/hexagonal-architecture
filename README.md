@@ -84,10 +84,13 @@ go test ./test/user/user_usecase_test.go
 │   └── port/               # Interface definitions (repository, usecase)
 ├── internal/
 │   ├── adapter/
-│   │   ├── http/handler/   # HTTP layer (Gin handlers)
+│   │   ├── http/handler/   # HTTP layer (net http handlers)
 │   │   └── postgres/       # Postgres adapter (GORM)
 │   └── app/usecase/        # Business logic implementation
 ├── test/user/              # Unit & integration tests
+│                          # - Uses SQLite in-memory DB for repo tests
+│                          # - Mocks interface (e.g., usecase) for handler tests
+│                          # - Validate business logic and DB interactions
 ├── go.mod / go.sum         # Dependencies
 └── .env / .gitignore       # Config & ignores
 ```
